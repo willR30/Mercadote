@@ -3,23 +3,54 @@
 
 {% block content %}
 <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css' ) }}">
-    
+<div style="width: 100%; height: 50px; background-color: red; margin-bottom: 10px;">
+
+</div>
 <div id="productsContainer">
         {% for product in data['products'] %}
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal{{product['id']}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h4>{{product['title']}}</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="{{product['images'][0]}}" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="{{product['images'][1]}}" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="{{product['images'][2]}}" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                          </div>
+                          <p id="productDescription">{{product['description']}}</p>
+                          <p id="productPrice">Price:   ${{product['price']}}</p>
+                          <p id="productName">Category: {{product['category']['name']}}</p>
+                    </div>
+                    
+                </div>
+                </div>
+            </div>
             <div class="productCard">
-                <img class="productImg" src="{{product['images'][1]}}" alt="...">
+                <img class="productImg" src="{{product['images'][0]}}" alt="...">
                <div id="productTextContainer">
                    <div>
                         <p id="productName">{{product['title']}}</p>
                         <p id="productPrice">${{product['price']}}</p>
                    </div>
                     <div id="moreContainer">
-                       <button class="btn btn-primary"> <a href="">More</a></button>
+                       <button  type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal{{product['id']}}">More</button>
                     </div>
                </div>
             </div>
         {% endfor %}
-       
-</div>
 
+</div>
 {% endblock %}

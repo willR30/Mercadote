@@ -3,7 +3,7 @@
 
 #productsContainer{
     display: grid;
-    grid-template-columns: repeat(auto-fill, 240px);
+    grid-template-columns: repeat(auto-fill, 200px);
     gap: 28px;/*espacio entre los items de la matriz*/
     place-content: center;
     background-color: var( --backgroundColor);
@@ -71,4 +71,17 @@
    color: white;
    background-color: transparent;
 
+}
+
+.carousel-item  img{
+     border-radius: 16px;
+}
+
+.modal-body #productDescription{
+    font-size: var(--textMediumSize);
+}
+
+.modal-body #productPrice{
+    font-size: var(--textBigSize);
+    font-weight: bold;
 }
