@@ -1,0 +1,74 @@
+@import url('styles_variables.css');
+
+
+#productsContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    gap: 28px;/*espacio entre los items de la matriz*/
+    place-content: center;
+    background-color: var( --backgroundColor);
+    padding: 1%;
+}
+.productCard{
+    width: auto;
+    padding: 3%;
+    border-radius: 16px;
+    background-color: var(--cardPrimaryColor);
+}
+
+.productCard img{
+    width: 100%;
+    height: 240px;
+    border-radius: 16px;
+    object-fit: cover;/*que la imagen ocupe todo el espacio disponible*/
+}
+
+.productCard a{
+    background-color: var(--buttonPrimaryColor);
+    text-decoration: none;
+}
+
+.productCard #productTextContainer{
+    background-color: transparent;
+    padding: 2%;
+    display: inline-flex;
+}
+
+.productCard #productTextContainer{
+    color: var(--titlePrimaryColor);
+   
+}
+.productCard #productTextContainer #productName{
+    font-size: var(--textMediumSize);
+   
+}
+.productCard #productTextContainer #productPrice{
+    font-size: var(--textBigSize);
+    font-weight: bold;
+}
+
+.productCard #productTextContainer #moreContainer{
+    background-color: transparent;
+    width: 100px;
+    margin-left: 5px;
+}
+
+
+.productCard #productTextContainer #moreContainer button{
+    background-color: var(--buttonPrimaryColor);
+    border-radius: 16px;
+    width: 100%;
+    height: 40px;
+    padding: 10%;
+    margin-top: 40%;
+    border: transparent;
+
+}
+.productCard #productTextContainer #moreContainer button:hover{
+    background-color: var(--buttonSecondaryColor);
+}
+.productCard #productTextContainer #moreContainer a{
+   color: white;
+   background-color: transparent;
+
+}

@@ -1,0 +1,11 @@
+@import url('styles_variables.css');
+
+h1{
+    background-color: var(--buttonPrimaryColor);
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: red;
+}

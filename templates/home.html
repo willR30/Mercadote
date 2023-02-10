@@ -1,0 +1,25 @@
+<!--indicamos de donde exteniende el codigo que está global-->
+{% extends "Layout.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css' ) }}">
+    
+<div id="productsContainer">
+        {% for product in data['products'] %}
+            <div class="productCard">
+                <img class="productImg" src="{{product['images'][1]}}" alt="...">
+               <div id="productTextContainer">
+                   <div>
+                        <p id="productName">{{product['title']}}</p>
+                        <p id="productPrice">${{product['price']}}</p>
+                   </div>
+                    <div id="moreContainer">
+                       <button class="btn btn-primary"> <a href="">More</a></button>
+                    </div>
+               </div>
+            </div>
+        {% endfor %}
+       
+</div>
+
+{% endblock %}

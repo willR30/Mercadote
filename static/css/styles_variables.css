@@ -1,0 +1,12 @@
+:root{
+    --backgroundColor: #252525;
+    --cardPrimaryColor: #3D3B3B;
+    --titlePrimaryColor: white;
+    --buttonPrimaryColor: #EB7050;
+    --buttonSecondaryColor: #72D2C2;
+
+    --textBigySize: 18px;
+    --textMediumSize: 14px;
+    --textSmallSize: 10px;
+    
+}
