@@ -1,0 +1,53 @@
+@import url(styles_variables.css);
+
+#generalContainer{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    position: relative;
+}
+
+#productFindedContainer{
+    background-color: var(--cardPrimaryColor);
+    padding: 1%;
+    width: 35%;
+    height: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 16px;
+    margin-top: 10px;
+}
+
+#productFindedContainer img{
+    border-radius: 16px;
+}
+
+#productTextContainer{
+    background-color: transparent;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.textProduct{
+    color: white;
+}
+
+#productTitle, #productPrice{
+    font-weight: bold;
+}
+
+#productTitle{
+    font-size: var(--textBigSize);
+}
+
+@media screen and (max-width: 1000px) {
+
+    #productFindedContainer{
+        width: 95%;
+        margin-top: 10%;
+    }
+
+}
+
+
+
