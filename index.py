@@ -2,7 +2,8 @@
 #Flak 2.2.2
 
 import requests
-from flask import Flask, render_template
+from flask import Flask, render_template, request
+from crypt import methods
 
 
 app=Flask(__name__)
@@ -36,6 +37,23 @@ def getCategories():
 
     return data
 
+@app.route('/getProductByName',methods=["GET","POST"])
+def getProductByName():
+    if request.method=="POST":
+        productName= request.form.get("txtProduct")
+        print(f'Prodcut name: {productName}')
+
+        api_url=f'https://api.escuelajs.co/api/v1/products/?title={productName}'
+        response = requests.get(api_url).json()
+        data={
+            'product': response
+        }
+        
+        try:
+            return render_template('productFinded.html', data=data['product'][0])
+        except Exception:
+            return 'Error ty again later'
+        
 
 if __name__ == '__main__':
     app.run(debug=True)

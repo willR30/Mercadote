@@ -28,8 +28,8 @@
                 <a class="nav-link" href="#" style="color:white">About the proyect</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <form class="d-flex" role="search" method="post" action="{{url_for('getProductByName')}}">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="txtProduct">
               <button class="btn btn-primary" type="submit" style="color:white; background-color: #EB7050; border-color: #EB7050;">Search</button>
             </form>
           </div>
