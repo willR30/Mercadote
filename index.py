@@ -1,9 +1,7 @@
 #Python 3.11.1
 #Flak 2.2.2
-
 import requests
 from flask import Flask, render_template, request
-from crypt import methods
 
 
 app=Flask(__name__)
