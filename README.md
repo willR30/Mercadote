@@ -1,19 +1,19 @@
 <h1>Mercadote</h1>
-    <h2>¿Qué es?</h2>
-    <p>Simulación de plataforma de ecommerce, consumiendo una API</p>
+     <h2>What is it?</h2>
+     <p>Ecommerce platform simulation, consuming an API</p>
     
 ![image](https://user-images.githubusercontent.com/50780601/218523331-d21c6e25-a448-44b4-a757-1d03e6c38c16.png)
 <ul>
-    <li>Listar productos</li>
-    <li>Listar Categorias de productos</li>       
-    <li>Buscar producto por nombre</li>
+     <li>List products</li>
+     <li>List Product Categories</li>
+     <li>Search product by name</li>
 </ul>
 
- <h2>Detalles técnicos</h2>
-    <p>Python 3.11.1</p>
-    <p>Flask 2.2.2</p>
-    <p>HTMl y CSS</p>
-    <p>Bootstrap 5.3</p>
-     <a  aria-current="page" href="https://fakeapi.platzi.com/">Documentacion Platzi Fake Store API, la cual fue usada para este proyecto, créditos a ellos por los datos aqui mostrados</a>
+  <h2>Technical details</h2>
+     <p>Python 3.11.1</p>
+     <p>Flash 2.2.2</p>
+     <p>HTML and CSS</p>
+     <p>Bootstrap 5.3</p>
+      <a aria-current="page" href="https://fakeapi.platzi.com/">Platzi Fake Store API documentation, which was used for this project, credits to them for the data shown here</a>
 
 
