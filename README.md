@@ -11,7 +11,7 @@
 
   <h2>Technical details</h2>
      <p>Python 3.11.1</p>
-     <p>Flash 2.2.2</p>
+     <p>Flask 2.2.2</p>
      <p>HTML and CSS</p>
      <p>Bootstrap 5.3</p>
       <a aria-current="page" href="https://fakeapi.platzi.com/">Platzi Fake Store API documentation, which was used for this project, credits to them for the data shown here</a>
